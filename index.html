@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Canvas</title>
+    <link rel="stylesheet" href="css/index-css.css">
+</head>
+
+<body onload="init()">
+
+    <div class="choose-contain">
+        <button onclick="onClearCanvas()" class="clear">Clear paint</button>
+        <button class="save"><a class="download" href="#" onclick="onSaveCanvas(this)" download="">Download</a></button>
+        <input class="color" type="color" value="#f6b73c">
+        <select class="actions-select">
+            <option value="square">square</option>
+            <option value="line">line</option>
+            <option value="circle">circle</option>
+          </select>
+        <select class="size-select">
+                <option value="1">select the font size</option>
+            <option value="1">1px</option>
+            <option value="2">2px</option>
+            <option value="3">3px</option>
+            <option value="4">4px</option>
+            <option value="5">5px</option>
+            <option value="6">6px</option>
+            <option value="7">7px</option>
+            <option value="8">8px</option>
+            <option value="9">9px</option>
+            <option value="10">10px</option>
+          </select>
+        <div id="fb-root"></div>
+        <div class="share-container"></div>
+        <form class="publish" action="" method="POST" enctype="multipart/form-data" onsubmit="uploadImg(this, event)">
+            <input name="img" id="imgData" type="hidden" />
+            <button type="submit">Publish</button>
+        </form>
+    </div>
+    <canvas class="canvas" onclick="draw(event)" width="500" height="500">
+        Update your browser to enjoy canvas!
+    </canvas>
+
+
+
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/util.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.choose-contain {
+    position: absolute;
+    top: 0;
+    left: 38%;
+    z-index: 1;
+    margin: 0;
+}
+
+.canvas {
+    z-index: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.download {
+    text-decoration: none;
+    color: black;
+}
+
+.publish {
+    position: relative;
+    left: -64px;
+    top: -22px;
+}
