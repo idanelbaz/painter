@@ -33,13 +33,12 @@
             <option value="9">9px</option>
             <option value="10">10px</option>
           </select>
-        <div id="fb-root"></div>
-        <div class="share-container"></div>
-        <form class="publish" action="" method="POST" enctype="multipart/form-data" onsubmit="uploadImg(this, event)">
-            <input name="img" id="imgData" type="hidden" />
-            <button type="submit">Publish</button>
-        </form>
+
     </div>
+    <form class="publish" action="" method="POST" enctype="multipart/form-data" onsubmit="uploadImg(this, event)">
+        <input name="img" id="imgData" type="hidden" />
+        <button type="submit">Publish</button>
+    </form>
     <canvas class="canvas" onclick="draw(event)" width="500" height="500">
         Update your browser to enjoy canvas!
     </canvas>

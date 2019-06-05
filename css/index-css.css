@@ -20,7 +20,8 @@ body {
 }
 
 .publish {
-    position: relative;
-    left: -64px;
-    top: -22px;
+    position: absolute;
+    z-index: 1;
+    left: 33.85%;
+    top: 0.70%;
 }
